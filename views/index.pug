@@ -1,5 +1,31 @@
 extends layout
 
-block content
-  h1= title
-  p Welcome to #{title}
+block content    
+  nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+    .container
+      #main_map       
+  section.py-5
+    .container.my-5
+      .row.justify-content-center
+        .col-lg-6
+          h2 Full Width Backgrounds
+          p.lead
+            | A single, lightweight helper class allows you to add engaging, full width background images to sections of your page.
+          p.mb-0
+            | The universe is almost 14 billion years old, and, wow! Life had no problem starting here on Earth! I think it would be inexcusably egocentric of us to suggest that we&apos;re alone in the universe.  
+  .py-5.bg-image-full(style="background-image: url('https://source.unsplash.com/4ulffa6qoKA/1200x800')")    
+    div(style='height: 20rem')  
+  section.py-5
+    .container.my-5
+      .row.justify-content-center
+        .col-lg-6
+          h2 Engaging Background Images
+          p.lead
+            | The background images used in this template are sourced from Unsplash and are open source and free to use.
+          p.mb-0
+            | I can&apos;t tell you how many people say they were turned off from science because of a science teacher that completely sucked out all the inspiration and enthusiasm they had for the course.  
+  footer.py-5.bg-dark
+    .container
+      p.m-0.text-center.text-white Copyright &copy; Your Website 2022  
+  script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
+  script(src='/javascripts/map.js')  
